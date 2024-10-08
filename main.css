@@ -3,13 +3,14 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh;  /* 表示占满整个高度 */
     margin: 0;
 }
 
 .container
 {
     display: flex;
+    /* flex-direction: column; */  /* 纵向排列 */
     width: 80%;
     height: 300px;
 }
