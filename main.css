@@ -1,0 +1,33 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container
+{
+    display: flex;
+    width: 80%;
+    height: 300px;
+}
+
+.cards
+{
+    flex: 1;
+    margin: 10px;
+    cursor: pointer;
+    transition: flex 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+}
+
+.cards:hover
+{
+    flex: 3;
+}
