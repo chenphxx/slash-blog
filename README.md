@@ -13,4 +13,12 @@ VX: XieG0110
 
 ## 说明
 
-尚在开发当中, 没有正式上线, 上线后会提供网站地址 
+目前尚在开发当中, 没有正式上线, 上线后会提供网站地址 
+
+## 鸣谢
+
+网页中`markdown`部分使用了项目`vidtor`, 一款浏览器端的Markdown编辑器 
+
+```http
+https://github.com/Vanessa219/vditor
+```
