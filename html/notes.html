@@ -4,12 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../css/notes.css">
+    <!-- vditor 支持markdown编辑 -->
+    <link rel="stylesheet" href="../node_modules/vditor/dist/index.css">
+
     <title>chenphxx's notes</title>
 </head>
 
 <body>
-    <h1>Notes</h1>
+        <!-- Container for Vditor -->
+        <div id="vditor" style="height: 500px; background-color: #fff;"></div>
+        <!-- 引入 Vditor JS -->
+        <script src="node_modules/vditor/dist/index.min.js"></script>
+        <!-- 初始化 Vditor -->
+        <script>
+            document.addEventListener
+            (
+                'DOMContentLoaded', function()
+                {
+                    const vditor = new Vditor
+                    (
+                        'vditor',
+                        {
+                            height: 500,
+                            toolbar: ['emoji', 'headings', 'bold', 'italic', 'strike', 'preview', 'fullscreen'],
+                            mode: 'ir',  // Options: 'wysiwyg', 'sv', 'ir'
+                            placeholder: 'Write your notes here...',
+                            theme: 'classic'  // Options: 'classic', 'dark'
+                        }
+                    );
+                }
+            );
+        </script>
 </body>
 
 </html>
