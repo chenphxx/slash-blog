@@ -1,5 +1,6 @@
 body
 {
+    background-color: #A4E2C6;  /* 艾绿 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +8,8 @@ body
     margin: 0;
 }
 
-.container
+/* 水平排列 */
+.container_horizontal
 {
     display: flex;
     /* flex-direction: column; */  /* 纵向排列 */
@@ -15,8 +17,18 @@ body
     height: 300px;
 }
 
+/* 垂直排列 */
+.container_vertical
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+}
+
 .cards
 {
+    border-radius: 20px;
     flex: 1;
     margin: 10px;
     cursor: pointer;
@@ -31,4 +43,10 @@ body
 .cards:hover
 {
     flex: 3;
+}
+
+a
+{
+    text-decoration: none;
+    color: #758A99;  /* 墨灰 */
 }
