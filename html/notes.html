@@ -14,26 +14,26 @@
 
 <body>
         <!-- Container for Vditor -->
-        <div id="vditor" style="height: 500px; background-color: #fff;"></div>
+        <div id="vditor" style="height: 500px; background-color: #5062b1;"></div>
         <!-- 引入 Vditor JS -->
-        <script src="node_modules/vditor/dist/index.min.js"></script>
+        <script src="../node_modules/vditor/dist/index.min.js"></script>
         <!-- 初始化 Vditor -->
         <script>
-            document.addEventListener
+            // 初始化 Vditor
+            const vditor = new Vditor
             (
-                'DOMContentLoaded', function()
+                'vditor',
                 {
-                    const vditor = new Vditor
-                    (
-                        'vditor',
+                    height: 1000, // 设置编辑器高度
+                    toolbar: ['emoji', 'bold', 'italic', '|', 'list', 'link', 'code'],  // 工具栏功能
+                    mode: 'ir', // 编辑模式: sv (分屏预览), ir (即时渲染), wysiwyg (所见即所得)
+                    preview:
+                    {
+                        markdown:
                         {
-                            height: 500,
-                            toolbar: ['emoji', 'headings', 'bold', 'italic', 'strike', 'preview', 'fullscreen'],
-                            mode: 'ir',  // Options: 'wysiwyg', 'sv', 'ir'
-                            placeholder: 'Write your notes here...',
-                            theme: 'classic'  // Options: 'classic', 'dark'
+                            toc: true, // 支持目录
                         }
-                    );
+                    }
                 }
             );
         </script>
