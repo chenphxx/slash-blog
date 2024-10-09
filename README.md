@@ -17,8 +17,4 @@ VX: XieG0110
 
 ## 鸣谢
 
-网页中`markdown`部分使用了项目`vidtor`, 一款浏览器端的Markdown编辑器 
-
-```http
-https://github.com/Vanessa219/vditor
-```
+网页中`markdown`部分使用了项目[vditor](https://github.com/Vanessa219/vditor): 一款浏览器端的Markdown编辑器 
